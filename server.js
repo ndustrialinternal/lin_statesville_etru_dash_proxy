@@ -18,7 +18,7 @@ app.use(express.json());
 
 // ─────────────────────────────────────────────────────────────
 // FIRST PROXY (Trailer API)
-const TRAILER_API_URL = 'https://lineage.api.staging.ndustrial.io/graphql';
+const TRAILER_API_URL = 'https://lineage.api.ndustrial.io/graphql';
 const TRAILER_API_TOKEN = 'token niou_T5yfTfEPK9yH6CHvhzLr54KHelGAB39FOCXv';
 
 app.post('/proxy', async (req, res) => {
@@ -27,7 +27,7 @@ app.post('/proxy', async (req, res) => {
 
 // ─────────────────────────────────────────────────────────────
 // SECOND PROXY (Submeter API)
-const SUBMETER_API_URL = 'https://ndustrialfleet.api.staging.ndustrial.io/graphql';
+const SUBMETER_API_URL = 'https://ndustrialfleet.api.ndustrial.io/graphql';
 const SUBMETER_API_TOKEN = 'token niou_jbHb7UeAL8MzSDegQHYn53Bwt7BUrh2eh6zq';
 
 app.post('/proxy-submeter', async (req, res) => {
