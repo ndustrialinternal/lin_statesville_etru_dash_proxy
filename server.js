@@ -6,7 +6,7 @@ const app = express();
 
 // ✅ CORS Configuration
 const corsOptions = {
-    origin: 'https://ndustrialinternal.github.io',
+    origin: '*',
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 };
